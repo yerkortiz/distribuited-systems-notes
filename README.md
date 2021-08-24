@@ -1,1 +1,1 @@
-# distribuited-systems-notes
+# Distributed Systems Notes
