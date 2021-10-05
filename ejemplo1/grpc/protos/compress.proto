@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package compress;
+option go_package = ".";
+
+message compressReq {
+    string name = 1;
+}
+
+message compressRes {
+    string greeting = 1;
+}
+
+service compressService {
+    rpc Compress(compressReq) returns (compressRes) {};
+}

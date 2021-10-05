@@ -12,7 +12,7 @@ class SearchService(pb2_grpc.SearchServicer):
 
     def GetServerResponse(self, request, context):
         message = request.message
-        result = f'Hello I am up and running received "{message}" message from you'
+        result = f'"{message}" '
         result = {'name': result, 'price': 123}
         search_res = {'product': [result, result]}
         return pb2.SearchResults(**search_res)
