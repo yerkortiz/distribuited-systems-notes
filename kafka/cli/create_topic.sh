@@ -8,3 +8,5 @@ $KAFKA_HOME/bin/kafka-topics.sh --create \
     --partitions 1 \
     --config retention.ms=259200000 \
     --topic event
+
+
